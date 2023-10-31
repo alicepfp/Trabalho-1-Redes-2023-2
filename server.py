@@ -3,8 +3,8 @@ import threading
 import os
 import time
 
-PORTA = 9999
-SERVER = '172.22.16.222'
+PORTA = 18000
+SERVER = ''
 ADDR = (SERVER, PORTA)
 HEADER = 64
 FORMAT = 'utf-8'

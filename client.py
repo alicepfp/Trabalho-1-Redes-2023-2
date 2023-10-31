@@ -1,10 +1,10 @@
 import socket 
 
 HEADER = 64
-PORT = 18
+PORT = 18000
 FORMAT ='utf-8'
 DISCONNECT_MESAGE = ':D'
-SERVER = '192.168.15.9'
+SERVER = ''
 ADDR = (SERVER, PORT)
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -21,12 +21,4 @@ def send(msg):
     
 while True:
     entry = input('Sua mensagem: ')
-    send(entry)
-    
-# if __name__=='__main__':
-#     quantidade = int(input('Quantas msgs vc vai mandar? '))
-#     for i in range(quantidade):
-#         entry = input('Sua mensagem: ')
-#         send(entry)
-    
-        
+    send(entry) 
