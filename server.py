@@ -25,10 +25,12 @@ def handler(conn, addr):
         conexoes.append(conn)
         
         while conectado:
-            msg_length = conn.recv(HEADER).decode(FORMAT)
-            if msg_length:
-                msg_length = int(msg_length)
-                msg = conn.recv(msg_length).decode(FORMAT)
+            #msg que eu recebo
+            msg = conn.recv(HEADER).decode(FORMAT)
+            #se a msg existe
+            if msg:
+                #vejo o tamanho
+                msg_length = len(msg)
                 if msg == DISCONNECT:
                     conectado = False
                     print(f"Desconctando: {addr}")
