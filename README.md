@@ -1,4 +1,4 @@
-<h1 align='center'>Trabalho de Redes</h1>
+<h1 align='center'>Trabalho de Redes - Comunicação Cliente-Servidor</h1>
 
 ## Conteúdos
 
